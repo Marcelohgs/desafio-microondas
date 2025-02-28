@@ -1,9 +1,22 @@
+.login{
+   justify-content: top !important;
+   align-items: top !important;
+}
+
 
 .panel-programa {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 500px;
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #6c757d;
+}
+
+.instructions {
+    position: page;
     width: 500px;
     border-radius: 10px; /* Bordas arredondadas */
     padding: 20px; /* Espaçamento interno */

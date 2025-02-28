@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [App\Http\Controllers\ProgramasAquecimentoController::class, 'getAll'])->name('welcome');
+Route::get('/login', [App\Http\Controllers\LoginController::class, 'index'])->name('index');
+Route::post('/login', [App\Http\Controllers\LoginController::class, 'Login'])->name('login');
+Route::post('/cadastrar', [App\Http\Controllers\LoginController::class, 'CreateUser'])->name('create.user');
