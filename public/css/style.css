@@ -1,0 +1,181 @@
+
+.panel-programa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #6c757d;
+}
+
+.inline {
+    display: flex;  /* Usa flexbox */
+    align-items: center;  /* Alinha verticalmente ao centro */
+}
+
+.inline p {
+    display: inline-block;  /* Torna os elementos inline */
+    margin-right: 10px;  /* Espaçamento entre os elementos */
+    vertical-align: middle;  /* Alinha verticalmente ao meio */
+    color: white;  /* Cor branca no texto */
+}
+
+.inline .display {
+    display: inline-block;  /* Torna os elementos inline */
+    margin-right: 10px;  /* Espaçamento entre os elementos */
+    vertical-align: middle;  /* Alinha verticalmente ao meio */
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Microondas */
+.microwave {
+    background-color: #444;
+    width: 1200px; /* Largura aumentada */
+    flex-wrap: wrap;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    overflow: hidden;
+    display: flex;
+}
+
+
+/* Pezinhos */
+.foot {
+    position: absolute;
+    bottom: -15px;
+    width: 40px;
+    height: 10px;
+    background-color: #666;
+    border-radius: 5px;
+}
+
+.left-foot {
+    left: 50px;
+}
+
+.right-foot {
+    right: 50px;
+}
+
+/* Porta do Microondas */
+.door {
+    width: 60%; /* Porta um pouco menor para o painel de controle ficar maior */
+    flex-wrap: wrap;
+    background-color: #555;
+    border-right: 5px solid #333;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.door-window {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid #333;
+    border-radius: 10px;
+}
+
+.handle {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 50px;
+    background-color: #666;
+    border-radius: 5px;
+}
+
+/* Painel de Controle */
+.control-panel {
+    width: 40%; /* Painel de controle maior */
+    height: 100%;
+    background-color: #333;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.display {
+    background-color: #000;
+    color: #0f0;
+    font-size: 2em;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Digital', sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.controls {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 100%;
+}
+
+.action-buttons {
+    grid-column: span 3;
+    display: flex;
+    gap: 10px;
+}
+
+.button {
+    background-color: #666;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    flex: 1; /* Botões ocupam espaço igual */
+}
+
+.button:hover {
+    background-color: #888;
+}
+
+.button.start {
+    background-color: #28a745;
+}
+
+.button.start:hover {
+    background-color: #218838;
+}
+
+.button.stop {
+    background-color: #dc3545;
+}
+
+.button.stop:hover {
+    background-color: #c82333;
+}
+
+.button.restart {
+    background-color: orange;
+}
+
+.button.restart:hover {
+    background-color: orangered;
+}
